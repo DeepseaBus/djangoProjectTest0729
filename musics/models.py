@@ -22,3 +22,6 @@ class Music(models.Model):
 
     class Meta:
         db_table = "music"
+
+    def display_type_name(self):
+        return self.get_type_display()
